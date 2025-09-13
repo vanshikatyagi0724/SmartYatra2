@@ -22,11 +22,17 @@
         android:name="com.example.smartyatra.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
     <fragment
         android:id="@+id/nav_disha_ai"
         android:name="com.example.smartyatra.DishaAIFragment"
         android:label="Disha AI"
         tools:layout="@layout/fragment_disha_ai" />
 
-
+    <!-- Added SecurityFragment -->
+    <fragment
+        android:id="@+id/nav_security"
+        android:name="com.example.smartyatra.SecurityFragment"
+        android:label="Security"
+        tools:layout="@layout/fragment_security" />
 </navigation>
