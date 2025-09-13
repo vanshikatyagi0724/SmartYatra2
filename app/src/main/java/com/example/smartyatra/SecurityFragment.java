@@ -25,7 +25,7 @@ public class SecurityFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_security, container, false);
 
-        // Initialize views using correct IDs from fragment_security.xml
+        // Initialize views
         nameEditText = root.findViewById(R.id.security_name_edit);
         startButton = root.findViewById(R.id.security_start_btn);
         stopButton = root.findViewById(R.id.security_stop_btn);
@@ -33,25 +33,32 @@ public class SecurityFragment extends Fragment {
         sosBtn = root.findViewById(R.id.security_sos_btn);
         helpdeskBtn = root.findViewById(R.id.security_helpdesk_btn);
 
-        // TODO: Implement actual functionality for buttons, for now sample listeners
+        // Disable all caps to match UI design
+        startButton.setAllCaps(false);
+        stopButton.setAllCaps(false);
+        womenHelplineBtn.setAllCaps(false);
+        sosBtn.setAllCaps(false);
+        helpdeskBtn.setAllCaps(false);
+
+        // Set button click listeners
         startButton.setOnClickListener(v -> {
-            // Start action logic here
+            // TODO: Start tracking or related action
         });
 
         stopButton.setOnClickListener(v -> {
-            // Stop action logic here
+            // TODO: Stop tracking or related action
         });
 
         womenHelplineBtn.setOnClickListener(v -> {
-            // Women helpline logic here
+            // TODO: Launch women helpline call or details
         });
 
         sosBtn.setOnClickListener(v -> {
-            // SOS logic here
+            // TODO: Trigger SOS alert or message
         });
 
         helpdeskBtn.setOnClickListener(v -> {
-            // Helpdesk logic here
+            // TODO: Open helpdesk activity or contact
         });
 
         return root;
